@@ -1,0 +1,212 @@
+/* styles.css */
+
+/* Базовый сброс */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили тела страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Стили шапки */
+header {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #555;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #777;
+}
+
+header button img {
+    border-radius: 50%;
+}
+
+/* Основные стили контента */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+/* Стили контейнера форм */
+.form-container {
+    background: #e9ecef;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s;
+}
+
+.form-container:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили постов */
+#posts .post {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+
+#posts .post:hover {
+    transform: translateY(-5px);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-header img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-content p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.like-button {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.like-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Стили онлайн пользователей и глобальных сообщений */
+#online-users-container, #global-messages-container {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#online-users span {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.message {
+    background-color: #bee5eb;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.message .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0c5460;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.message .content {
+    color: #333;
+}
