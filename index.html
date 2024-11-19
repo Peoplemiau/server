@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeShare</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>MemeShare</h1>
+        <button id="logout-button" aria-label="Logout" style="display: none;">
+            <img src="https://i.imgur.com/your-avatar.png" alt="User Avatar" width="24" height="24">
+        </button>
+    </header>
+    <main>
+        <!-- Раздел Регистрации -->
+        <div id="registration-section" class="form-container">
+            <h2>Регистрация</h2>
+            <div class="form-group">
+                <label for="register-email">Электронная почта:</label>
+                <input type="email" id="register-email" placeholder="Введите электронную почту">
+            </div>
+            <div class="form-group">
+                <label for="register-password">Пароль:</label>
+                <input type="password" id="register-password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+                <button id="register-button">Зарегистрироваться</button>
+            </div>
+            <div class="form-group">
+                <button id="show-login-button">Уже есть аккаунт? Войти</button>
+            </div>
+        </div>
+
+        <!-- Раздел Входа -->
+        <div id="login-section" class="form-container" style="display:none;">
+            <h2>Вход</h2>
+            <div class="form-group">
+                <label for="login-email">Электронная почта:</label>
+                <input type="email" id="login-email" placeholder="Введите электронную почту">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Пароль:</label>
+                <input type="password" id="login-password" placeholder="Введите пароль">
+            </div>
+            <div class="form-group">
+                <button id="login-button">Войти</button>
+            </div>
+        </div>
+
+        <!-- Раздел Создания Постов -->
+        <div id="messaging-section" class="form-container" style="display:none;">
+            <h2>Создать пост</h2>
+            <div class="form-group">
+                <label for="post-content">Содержимое:</label>
+                <textarea id="post-content" rows="4" placeholder="Что у вас на уме?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="post-image">URL изображения (необязательно):</label>
+                <input type="text" id="post-image" placeholder="Введите URL изображения">
+            </div>
+            <div class="form-group">
+                <button id="create-post-button">Опубликовать</button>
+            </div>
+        </div>
+
+        <!-- Раздел Онлайн Пользователей -->
+        <div id="online-users-container" class="form-container">
+            <h2>Онлайн пользователи</h2>
+            <div id="online-users">
+                <!-- Онлайн пользователи появятся здесь -->
+            </div>
+        </div>
+
+        <!-- Раздел Глобальных Сообщений -->
+        <div id="global-messages-container" class="form-container">
+            <h2>Глобальные сообщения</h2>
+            <div class="form-group">
+                <textarea id="global-message-input" rows="3" placeholder="Введите ваше сообщение..."></textarea>
+            </div>
+            <div class="form-group">
+                <button id="send-message-button">Отправить сообщение</button>
+            </div>
+            <div id="global-messages">
+                <!-- Глобальные сообщения появятся здесь -->
+            </div>
+        </div>
+
+        <!-- Раздел Постов -->
+        <div id="posts">
+            <!-- Посты появятся здесь -->
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
