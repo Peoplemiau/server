@@ -1,0 +1,9 @@
+{
+  "name": "memeshare",
+  "version": "1.0.0",
+  "description": "MemeShare Frontend and Backend",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
